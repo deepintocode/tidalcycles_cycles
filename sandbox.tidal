@@ -1,0 +1,30 @@
+do
+  cps (123/120)
+  d1 $ s "[bd bd]"
+  d3 $ s "[bass:3*4]"
+  d2 $ s "[[~ sn:3], [~ hh]*2]"
+
+d1 $ s "bd bd" # speed "1"
+
+d1 $ n "0 3 7 5 8 12 7 10 14 0 3 7" # s "supermandolin*2"
+
+d1 $ s "supermandolin*2" # n "0 3 7 5 8 12 7 10 14 0 3 7"
+
+d1 $ s "[~ d:7 ~ . hh*2 hh*2, bd*2]" # pan "0.7 0.3 0.7 0.3"
+
+d1 silence
+
+do
+  d1 $ s "bd:3(3,8)"
+  d2 $ slow 32 $ striate' 128 0.25 $ s "made:6*16" # gain 0.9
+  d3 $ s "hh*4"
+  d4 $ slow 2 $ s "sn(3,8)?"
+  d5 $ s "cp/2"
+  d6 $ s "hh(3,8)"
+
+d1 silence
+d2 silence
+d3 silence
+
+cps 1
+hush
